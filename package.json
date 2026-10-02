@@ -1,0 +1,9 @@
+{
+  "name": "idle-farm-packs",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.18" },
+  "scripts": {
+    "check": "node tools/check-registry.ts index.json"
+  }
+}

@@ -1,0 +1,29 @@
+name: Report a pack
+description: Something in a pack shouldn't be in the game.
+title: "Report: "
+labels: ["report"]
+body:
+  - type: input
+    id: pack
+    attributes:
+      label: Pack id
+      description: Filled in when you report from the game.
+    validations:
+      required: true
+  - type: dropdown
+    id: reason
+    attributes:
+      label: What's wrong
+      options:
+        - Scary, gory or mean content
+        - Hateful or adult content
+        - Copied without permission
+        - Broken (crashes, can't dig it)
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Which biome or thing, and what it says or shows.

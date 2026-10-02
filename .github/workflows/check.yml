@@ -1,0 +1,18 @@
+# Every PR, push and day: index.json reads the way the game reads it, and
+# every pack it lists downloads, matches its checksum and passes the rules.
+name: Check registry
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: '17 4 * * *'
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: node tools/check-registry.ts index.json

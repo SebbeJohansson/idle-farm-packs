@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "packs": [
+    {
+      "id": "example-caverns",
+      "name": "Example Caverns",
+      "author": "Idle Farm",
+      "description": "Three cave layers, the template's example. Install it to see how packs work.",
+      "version": "1.0.0",
+      "license": "CC0-1.0",
+      "biomes": 3,
+      "url": "https://cdn.jsdelivr.net/gh/SebbeJohansson/idle-farm-pack-template@v1.0.0/pack.json",
+      "sha256": "sha256-lwpJpofA3UJkFhNMRxVKpweDBRltfXYWOzUPsc0ALBE="
+    }
+  ],
+  "blocked": []
+}
