@@ -45,3 +45,8 @@ reach players right away.
 
 Copies of the game's pack rules (`schema.ts`) and registry reader
 (`registry.ts`), plus `check-registry.ts`. Plain Node, no dependencies.
+
+## License
+
+The tools and this repo's files are [MIT](LICENSE). Each pack belongs to
+its author and is under the license listed in its entry.
