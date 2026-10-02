@@ -16,3 +16,8 @@ jobs:
         with:
           node-version: 24
       - run: node tools/check-registry.ts index.json
+      # jsDelivr caches @main for hours; a merged change (a new pack, a
+      # block) should reach players now.
+      - name: Refresh jsDelivr
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: curl -fsS https://purge.jsdelivr.net/gh/${{ github.repository }}@main/index.json

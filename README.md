@@ -38,6 +38,8 @@ Players can report a pack from the game; that opens a
 [Report a pack](../../issues/new?template=report-pack.yml) issue here. A
 pack that has to go is removed from `packs` and its id added to `blocked`:
 the game stops listing it and warns anyone who has it installed.
+Every push to `main` clears jsDelivr's cache of `index.json`, so changes
+reach players right away.
 
 ## tools/
 
